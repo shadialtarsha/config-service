@@ -1,0 +1,44 @@
+production: 
+  base:
+    apiGateway: http://service.api-gateway-production
+    redis:
+      host: redis
+      port: 6379
+
+  push_service:
+    database: /data/push_service.db
+    awsSecret: ${AWS_SECRET}
+
+staging: 
+  base:
+    apiGateway: http://service.api-gateway-staging
+    redis:
+      host: redis
+      port: 6379
+
+  push_service:
+    database: /data/push_service.db
+    awsSecret: ${AWS_SECRET}
+
+development: 
+  base:
+    apiGateway: http://service.api-gateway-development
+    redis:
+      host: redis
+      port: 6379
+
+  push_service:
+    database: /data/push_service.db
+    awsSecret: ${AWS_SECRET}
+
+testing: 
+  base:
+    apiGateway: http://service.api-gateway-testin
+    redis:
+      host: redis
+      port: 6379
+
+  push_service:
+    database: /data/push_service.db
+    awsSecret: ${AWS_SECRET}
+
